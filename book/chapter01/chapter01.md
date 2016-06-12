@@ -1,5 +1,7 @@
 # 环境搭建
 
+---
+
 本章将详细介绍如何搭建Swoole的开发环境，包括PHP的安装、Swoole的安装、相关扩展的安装等等。
 通过学习本章，你可以学到如何快速搭建一套完整的Swoole开发环境。
 
@@ -19,7 +21,7 @@
 | 类别 | 名称 | 版本 |
 | --- | --- | --- |
 | MVC | ZPHP | Master分支 |
-| Yaf | ZPHP | Master分支 |
+| MVC | Yaf | Master分支 |
 | RPC | Hprose | Master分支 |
 | PRC | Dora-RPC | Master分支 |
 | DB Model | ThinkPHP | 3.2.2 (仅使用Model模块) |
