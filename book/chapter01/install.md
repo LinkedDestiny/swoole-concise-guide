@@ -3,6 +3,8 @@
 
 ---
 
+[TOC]
+
 # Linux环境下安装
 
 Linux操作系统通常都有自己的包管理软件（Ubuntu的apt-get，CentOS的yum，Mac OSX的HomeBrew等），因此一般情况下可以通过这些包管理软件直接安装PHP。但是这样安装的PHP不太适用于运行Swoole，因此本章将介绍如何通过源码编译安装。
