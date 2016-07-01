@@ -1,5 +1,5 @@
 {
-    "plugins": ["atoc"],
+    "plugins": ["atoc","js-sequence-diagram"],
     "pluginsConfig": {
         "atoc": {
             "addClass": true,

@@ -2,7 +2,7 @@
 
 ---
 
-[TOC]
+<!-- toc -->
 
 ## Swoole进程模型
 
@@ -10,10 +10,9 @@
 
 ![structure.png-18kB](http://static.zybuluo.com/Lancelot2014/xpatz2wxco47xrzi5xc3keni/structure.png)
 
-其中，Master进程为主进程，该进程会创建Manager进程、Reactor线程、Timer线程等工作进/线程。
+其中，Master进程为主进程，该进程会创建Manager进程、Reactor线程等工作进/线程。
 
 * Reactor线程实际运行epoll实例，用于accept客户端连接以及接收客户端数据；
-* Timer线程为定时器线程；
 * Manager进程为管理进程，该进程的作用是创建、管理所有的Worker进程和TaskWorker进程。
 
 ## Worker进程简介
