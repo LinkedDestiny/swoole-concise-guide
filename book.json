@@ -1,5 +1,9 @@
 {
-    "plugins": ["atoc","sequence-diagrams","flowchart"],
+    "plugins": [
+    	"atoc",
+    	"sequence-diagrams",
+    	"flowchart"
+    ],
     "pluginsConfig": {
         "atoc": {
             "addClass": true,
