@@ -1,9 +1,12 @@
 {
-    "plugins": ["atoc","js-sequence-diagram"],
+    "plugins": ["atoc","sequence-diagrams"],
     "pluginsConfig": {
         "atoc": {
             "addClass": true,
             "className": "atoc"
-        }
+        },
+        "sequence-diagrams": {
+		    "theme": "simple"
+		}
     }
 }

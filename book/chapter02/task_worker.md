@@ -8,22 +8,14 @@
 
 Task Worker是Swoole中一种特殊的工作进程，该进程的作用是处理一些耗时较长的任务，以达到释放Worker进程的目的。Worker进程可以通过`swoole_server`对象的task方法投递一个任务到Task Worker进程，其流程如下所示：
 
-```seq
+{% sequence %}
 
 Worker->Task Worker: task()
 Note right of Task Worker: onTask()
 Task Worker-->Worker: finish()
 Note left of Worker: onFinish()
 
-```
-
-'''sequence
-Title: Here is a title
-A->B: Normal line
-B-->C: Dashed line
-C->>D: Open arrow
-D-->>A: Dashed open arrow
-'''
+{% endsequence %}
 
 Worker进程通过Unix Sock管道将数据发送给Task Worker，这样Worker进程就可以继续处理新的逻辑，无需等待耗时任务的执行。需要注意的是，由于Task Worker是独立进程，因此无法直接在两个进程之间共享全局变量，需要使用Redis、MySQL或者swoole_table来实现进程间共享数据。
 
