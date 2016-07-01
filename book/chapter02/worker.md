@@ -8,7 +8,7 @@
 
 首先，我们需要了解一下Swoole的进程模型。Swoole是一个多进程模式的框架（可以类比Nginx的进程模型），当启动一个Swoole应用时，一共会创建2 + n + m个进程，其中n为Worker进程数，m为TaskWorker进程数，2为一个Master进程和一个Manager进程，它们之间的关系如下图所示。
 
-<center>![structure.png-18kB](http://static.zybuluo.com/Lancelot2014/xpatz2wxco47xrzi5xc3keni/structure.png)</center>
+![structure.png-18kB](http://static.zybuluo.com/Lancelot2014/xpatz2wxco47xrzi5xc3keni/structure.png)
 
 其中，Master进程为主进程，该进程会创建Manager进程、Reactor线程、Timer线程等工作进/线程。
 
