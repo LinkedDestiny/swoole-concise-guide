@@ -1,5 +1,5 @@
 {
-    "plugins": ["atoc","sequence-diagrams"],
+    "plugins": ["atoc","sequence-diagrams","flowchart"],
     "pluginsConfig": {
         "atoc": {
             "addClass": true,
@@ -7,6 +7,9 @@
         },
         "sequence-diagrams": {
 		    "theme": "simple"
+		},
+		"flowchart": {
+		    "line-color": "black"
 		}
     }
 }

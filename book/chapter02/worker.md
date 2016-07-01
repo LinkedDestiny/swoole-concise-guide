@@ -23,7 +23,7 @@ Worker进程作为Swoole的工作进程，所有的业务逻辑代码均在此�
 
 一个Worker进程的生命周期如图所示：
 
-```flow
+{% flowchart %}
 st=>start: Create
 start=>operation: onWorkerStart
 recv=>operation: onReceive/onConnect/onClose
@@ -36,9 +36,7 @@ st->start->recv->op->cond
 cond(yes)->stop
 cond(no)->recv
 stop->e
-```
+{% endflowchart %}
 
 当一个Worker进程被成功创建后，会调用`onWorkerStart`回调，随后进入事件循环等待数据。当通过回调函数接收到数据后，开始处理数据。如果处理数据过程中出现严重错误导致进程退出，或者Worker进程处理的总请求数达到指定上限，则Worker进程调用`onWorkerStop`回调并结束进程。
 
-
-  [1]: 
