@@ -1,19 +1,11 @@
 {
     "plugins": [
     	"atoc",
-    	// "sequence-diagrams",
-    	// "flowchart"
     ],
     "pluginsConfig": {
         "atoc": {
             "addClass": true,
             "className": "atoc"
         },
-  //       "sequence-diagrams": {
-		//     "theme": "simple"
-		// },
-		// "flowchart": {
-		//     "line-color": "black"
-		// }
     }
 }
