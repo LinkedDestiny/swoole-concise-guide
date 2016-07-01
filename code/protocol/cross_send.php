@@ -43,6 +43,7 @@ class Server
 
     public function onReceive( swoole_server $serv, $fd, $from_id, $data ) {
         echo "Get Message From Client {$fd}:{$data}\n";
+        var_dump($serv->exist($fd));
     }
 
     public function onClose( $serv, $fd, $from_id ) {

@@ -13,7 +13,7 @@ $client->set(array(
 ));
 
 $client->on("connect", function(swoole_client $cli) {
-    $data = str_repeat("1234567890" , 80000);
+    $data = str_repeat("1234567890" , 8);
 
     $cli->send($data . "\r\n");
 });
@@ -29,4 +29,4 @@ $client->on("close", function(swoole_client $cli){
     echo "Connection close\n";
 });
 
-$client->connect('127.0.0.1', 9501);
+$client->connect('127.0.0.1', 9502);

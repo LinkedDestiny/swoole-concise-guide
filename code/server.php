@@ -41,7 +41,7 @@ class Server
     public function onReceive( swoole_server $serv, $fd, $from_id, $data ) {
         $len = strlen($data);
         echo "Get Message From Client {$fd}:{$len}\n";
-
+        var_dump($serv->exist($fd));
     }
 
     public function onClose( $serv, $fd, $from_id ) {
