@@ -1,11 +1,11 @@
 {
-    "plugins": [
-    	"atoc",
-    ],
-    "pluginsConfig": {
-        "atoc": {
+    "plugins": ["atoc"],
+    "pluginsConfig": 
+    {
+        "atoc": 
+        {
             "addClass": true,
             "className": "atoc"
-        },
+        }
     }
 }
