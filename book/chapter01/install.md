@@ -103,7 +103,7 @@ Right now, you can check out the PHP version using `php --version`!
 
 # Mac环境下安装 Setup for Mac
 Mac系统自带PHP，但是Mac上对于OpenSSL的相关功能做了一些限制，使用了一个`Secure Transport`来取代OpenSSL。因此仍然建议重新编译安装PHP环境。
-MacOS comes with a certain version of PHP. But OpenSSL for that version is restricted and got replaced by `Secure Transport`.  For that matter, reinstalling in a source code compiling way is still highly recommanded.
+MacOS comes with a certain version of PHP. But OpenSSL for that version is restricted and got replaced by `Secure Transport`.  For that matter, reinstalling it in a code compiling way is still highly recommanded.
 
 ## 安装OpenSSL OpenSSL Installation
 Mac原装的0.9.8版本的OpenSSL使用的时候会有些Warning，反正我看不惯……
